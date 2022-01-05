@@ -1,18 +1,18 @@
 class FriendsController < ApplicationController
   def index
     friend = Friend.all
-    render json: friend.as_json
+    render json: friend
   end
 
   def show
     friend = Friend.find_by(id: params[:id])
-    render json: friend.as_json
+    render json: friend
   end
 
   def create
     friend = Friend.new(name: params[:name], friend_score: 0)
     friend.save
-    render json: friend.as_json
+    render json: friend
   end
 
   def edit
@@ -20,7 +20,7 @@ class FriendsController < ApplicationController
     friend.name = params[:name] || friend.name
     friend.friend_score = params[:friend_score] || friend.friend_score
     friend.save
-    render json: friend.as_json
+    render json: friend
   end
 
   def destroy
