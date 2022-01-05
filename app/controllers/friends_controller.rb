@@ -10,7 +10,7 @@ class FriendsController < ApplicationController
   end
 
   def create
-    Friend.new(name: params[:name], friend_score: 0)
+    friend = Friend.new(name: params[:name], friend_score: 0)
     friend.save
     render json: friend.as_json
   end
