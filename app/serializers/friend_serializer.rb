@@ -1,5 +1,5 @@
 class FriendSerializer < ActiveModel::Serializer
-  attributes :id, :name, :friend_score
+  attributes :id, :name, :score
 
   has_many :actions
 end
