@@ -5,4 +5,10 @@ Rails.application.routes.draw do
   post "/friends" => "friends#create"
   patch "/friends/:id" => "friends#edit"
   delete "/friends/:id" => "friends#destroy"
+
+  get "/actions" => "actions#index"
+  get "/actions/:id" => "actions#show"
+  post "/actions" => "actions#create"
+  patch "/actions/:id" => "actions#edit"
+  delete "/actions/:id" => "actions#destroy"
 end
