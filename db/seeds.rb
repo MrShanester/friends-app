@@ -8,3 +8,4 @@
 # Friend.create!(name: "Alex", friend_score: 0)
 # Friend.create!(name: "Tanner", friend_score: 0)
 # Friend.create!(name: "Ethan", friend_score: 0)
+# Action.create!(friend_id: 1, title: "Cookie", description: "Offered me a store bought cookie.", evaluation: true, points: 1)
